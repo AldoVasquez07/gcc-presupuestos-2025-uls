@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+    color: #016241;
+}
+
+header .menu {
+    font-size: 14px;
+    color: #016241;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.title p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background: #016241;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #014d32;
+}
+
+.status-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.status {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f4f4f4;
+}
+
+.status span {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.status.wait {
+    border-left: 5px solid orange;
+}
+
+.status.ok {
+    border-left: 5px solid green;
+}
+
+.status.no {
+    border-left: 5px solid red;
+}
+
+.propuesta {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fafafa;
+}
+
+.propuesta h4 {
+    margin: 0 0 5px 0;
+}
+
+.badge {
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: white;
+}
+
+.badge.wait {
+    background: orange;
+}
+
+.badge.ok {
+    background: green;
+}
+
+.badge.no {
+    background: red;
+}

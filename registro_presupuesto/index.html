@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Registro de Presupuestos</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <header>
+    <h1>Universidad La Salle - Arequipa</h1>
+    <div class="menu">Sistema de Presupuestos</div>
+  </header>
+
+  <div class="container">
+    <div class="title">
+      <h2>Sistema de Registro de Presupuestos</h2>
+      <p>Gestión de Presupuestos para Grupos de Investigación</p>
+    </div>
+
+    <div class="grid">
+      <!-- Formulario -->
+      <div class="card">
+        <h3>Registrar Presupuesto</h3>
+        <form id="formPresupuesto">
+          <label>Proyecto Presupuestado*</label>
+          <input type="text" id="proyecto" required>
+
+          <label>Grupo Solicitante *</label>
+          <input type="text" id="grupo" required>
+
+          <label>Fecha de Presentación *</label>
+          <input type="date" id="fecha" required>
+
+          <label>Archivo de Presupuesto *</label>
+          <input type="file" id="archivo" required>
+
+          <button type="submit">Enviar Presupuesto</button>
+        </form>
+      </div>
+
+      <!-- Panel de estado -->
+      <div>
+        <div class="status-cards">
+          <div class="status wait">
+            En espera
+            <span id="countWait">1</span>
+          </div>
+          <div class="status ok">
+            Aprobados
+            <span id="countOk">1</span>
+          </div>
+          <div class="status no">
+            Rechazados
+            <span id="countNo">1</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Propuestas Recientes</h3>
+          <div id="listaPropuestas">
+            <div class="propuesta">
+              <h4>Análisis de Calidad del Agua en Arequipa</h4>
+              <p><strong>Estado:</strong> <span class="badge wait">En espera</span></p>
+            </div>
+            <div class="propuesta">
+              <h4>Desarrollo de Aplicaciones Móviles Educativas</h4>
+              <p><strong>Estado:</strong> <span class="badge ok">Aprobado</span></p>
+            </div>
+            <div class="propuesta">
+              <h4>Estudio de Mercado Local</h4>
+              <p><strong>Estado:</strong> <span class="badge no">Rechazado</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
